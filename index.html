@@ -151,7 +151,7 @@
     <!-- Portfolio Section End -->
 
     <!-- Clients Section Start -->
-    <section id="clients" class="pt-36 pb-32 bg-slate-700">
+    <!-- <section id="clients" class="pt-36 pb-32 bg-slate-700">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
@@ -178,7 +178,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Clients section end -->
  
     <!-- Blog Section start -->
@@ -246,22 +246,23 @@
                     <p class="font-medium text-md text-secondary md:text-lg">Terimaksaih telah mengunjungi website kami.Tinggalkan pesan anda, dan berikan saran</p>
                 </div>
             </div>
-        <form>
+        <form name="contact-danur-isa">
             <div class="lg:w-2/3 justify-center lg:mx-auto">
                 <div class="w-full px-4 mb-8">
                     <label for="name" class="text-base text-primary font-bold up">Nama</label>
-                    <input type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    <input type="text" id="name"  name="nama" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                 </div>
                 <div class="w-full px-4 mb-8">
                     <label for="email" class="text-base text-primary font-bold up">Email</label>
-                    <input type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    <input type="email" id="email" name="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
                 </div>
                 <div class="w-full px-4 mb-8">
                     <label for="message" class="text-base text-primary font-bold up">Pesan</label>
-                    <textarea type="email" id="" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                    <textarea type="email" id="" name="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
                 </div>
                 <div class="w-full px-4">
-                    <button class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 hover:shadow-md transition duration-500 w-full">Kirim</button>
+                    <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 hover:shadow-md transition duration-500 w-full mb-4">Kirim </button>
+                   
                 </div>
             </div>
         </form>
@@ -327,6 +328,18 @@
     <!-- Footer End -->
     <!-- Script -->
     <script src="dist/js/script.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby48D_VGnq1nIqlwjoZvYJdZ-SxKIEEn9g7fiizYqeTXepz_gEX_SZ_rnMS7Lf-g7pIsg/exec';
+        const form = document.forms['contact-danur-isa'];
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
     
 </body>
 </html
