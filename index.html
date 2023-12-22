@@ -58,7 +58,7 @@
                 <div class="w-full self-center px-4 mb-5 lg:w-1/2"> 
                     <h1 class="text-base font-semibold text-primary md:text-xl ">Halo Semua, Saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Danur Isa Prabutama</span></h1>
                     <h2 class="font-meddum text-secondary text-lg mb-5 lg:text-2xl">Pelajar</h2>
-                    <p class="font-medium text-secondary mb-10 leading-relaxed">Saya adalah siswa SMKN 1 SAMBENG. Saya memiliki pengalaman magang di sebuah digital agency di Jombang selama 4 bulan. Saya merupakan seorang yang bertanggung jawab dan dapat diandalkan.</p>
+                    <p class="font-medium text-secondary mb-10 leading-relaxed">Mahasiswa Politeknik Elektronika Negeri Surabaya Program Studi Teknik Informatika.Memiliki pengalaman magang di sebuah digital agency di Jombang selama 4 bulan.Seorang yang bertanggung jawab dan dapat diandalkan.</p>
                     <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition-duration-300 ease-in-out">Hubungi saya</a>
                 </div>
                 <div class="wfull self-end px-4 lg:w-1/2 sm:items-center justify-center">
@@ -68,7 +68,7 @@
                         <span class="absolute -bottom-20 -z-10 -translate-x-1/2 left-1/2 md:scale-120">
                             <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#2dd4bf" d="M42.1,-14.1C50.4,11.8,50,40.1,35,51.9C20,63.6,-9.7,58.9,-33,42.7C-56.2,26.4,-73,-1.4,-66.5,-24.9C-59.9,-48.5,-29.9,-67.7,-6.5,-65.6C16.9,-63.5,33.8,-40,42.1,-14.1Z" transform="translate(100 100) scale(1,1)" />
-                              </svg>
+                            </svg>
                         </span>
                     </div>
                 </div>
@@ -133,15 +133,6 @@
                         <div>
                             <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Static Routing Cisco</h3>
                             <p class="font-medium text-base text-secondary"> Konfigurasi static routing lebih tepat diimplementasikan pada network yang sederhana dan tidak sering mengalami perubahan. Jika terdapat penambahan network baru,maka administrator jaringan harus menambahkan konfigurasi routing tersebutpada masing-masing gateway.Pada gambar diatas saya membuat simulasi static routing cisco di aplikasi packet tracer</p>
-                        </div>
-                    </div>
-                    <div class="mb-12 p-4 md:w-1/2">
-                        <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="dist/img/porfolio/project1.png" alt="landing page" widht="w-full" />
-                        </div>
-                        <div>
-                            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Portfolio sederhana</h3>
-                            <p class="font-medium text-base text-secondary">Wesbite portofolio adalah portofolio digital yang dapat diakses melalui internet dengan tujuan untuk menunjukan karya dan bakat Anda. Pada website yang dibuat, Anda bisa menunjukkan bakat, keahlian dan pengalaman yang telah Anda miliki.website Portfolio yang ada di atas saya buat menggunakan html,css,bootstrap,dan php</p>
                         </div>
                     </div>
                 </div>
@@ -246,19 +237,19 @@
                     <p class="font-medium text-md text-secondary md:text-lg">Terimaksaih telah mengunjungi website kami.Tinggalkan pesan anda, dan berikan saran</p>
                 </div>
             </div>
-        <form name="contact-danur-isa">
+        <form name="contact-danur-isa" action="connect.php" method="post">
             <div class="lg:w-2/3 justify-center lg:mx-auto">
                 <div class="w-full px-4 mb-8">
                     <label for="name" class="text-base text-primary font-bold up">Nama</label>
-                    <input type="text" id="name"  name="nama" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    <input type="text" id="name"  name="nama" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
                 </div>
                 <div class="w-full px-4 mb-8">
                     <label for="email" class="text-base text-primary font-bold up">Email</label>
-                    <input type="email" id="email" name="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    <input type="email" id="email" name="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
                 </div>
                 <div class="w-full px-4 mb-8">
                     <label for="message" class="text-base text-primary font-bold up">Pesan</label>
-                    <textarea type="email" id="" name="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                    <textarea type="email" id="" name="pesan" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32" required></textarea>
                 </div>
                 <div class="w-full px-4">
                     <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:opacity-80 hover:shadow-md transition duration-500 w-full mb-4">Kirim </button>
@@ -277,9 +268,9 @@
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-12 text-slate-100 font-medium md:w-1/3">
                     <h2 class="font-bold text-3xl text-white mb-5">Danur Isa</h2>
-                    <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+                    <h3 class="font-bold text-2xl mb-2">Hubungi Saya</h3>
                     <p>isaprabutama@gmail.com</p>
-                    <P>Ds.Sendangrejo Kec.Ngimbang Kab.Lamongan</P>
+                    <P>Lamongan, Jawa Timur</P>
                 </div>
                 <div class="w-full px-4 mb-12 md:w-1/3">
                     <h3 class="font-semibold text-xl text-white mb-5">kategori Tulisan</h3>
